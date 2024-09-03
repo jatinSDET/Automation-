@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-02T16:39:50 IST" name="Default suite" finished-at="2024-09-02T16:41:37 IST" duration-ms="107043">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.ORIONErrorsValidations_Run@58ea606c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-09-02T16:39:50 IST" name="Default test" finished-at="2024-09-02T16:41:37 IST" duration-ms="107043">
+      <class name="TestRunner.ORIONErrorsValidations_Run">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.ORIONErrorsValidations_Run@58ea606c]" started-at="2024-09-02T16:39:50 IST" name="setUpClass" finished-at="2024-09-02T16:39:50 IST" duration-ms="732" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2bbb44da]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.ORIONErrorsValidations_Run@58ea606c]" started-at="2024-09-02T16:39:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-02T16:41:31 IST" duration-ms="100996" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Workorder validations Equipment has too many outgoing cables should be working fine"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Workorder validations"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Equipment']"}
+  (Session info: MicrosoftEdge=128.0.2739.42)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b3c30c80d052c9459ea3803acf1a5f30, findElement {value=//div[normalize-space()='Equipment'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.42, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52327}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\615616~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52327/devtoo..., se:cdpVersion: 128.0.2739.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b3c30c80d052c9459ea3803acf1a5f30]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Equipment']"}
+  (Session info: MicrosoftEdge=128.0.2739.42)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b3c30c80d052c9459ea3803acf1a5f30, findElement {value=//div[normalize-space()='Equipment'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.42, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52327}, msedge: {msedgedriverVersion: 128.0.2739.54 (baeaa1ac164a..., userDataDir: C:\Users\615616~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52327/devtoo..., se:cdpVersion: 128.0.2739.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b3c30c80d052c9459ea3803acf1a5f30
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at Utility.UserBase.addSpilitter(UserBase.java:722)
+at StepLocator.ORIONErrorsValidations_StepLocator.addingSplitter(ORIONErrorsValidations_StepLocator.java:454)
+at StepDefinition.ORIONErrorsValidations.click_to_add_and_add_splitter(ORIONErrorsValidations.java:175)
+at ✽.Click to add and add Splitter(file:///C:/Users/615616368/eclipse-workspace/ORION_CST.zip_expanded/ORION_CST/./Features/ORIONErrorsValidations.feature:49)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.ORIONErrorsValidations_Run@58ea606c]" started-at="2024-09-02T16:41:31 IST" name="tearDownClass" finished-at="2024-09-02T16:41:37 IST" duration-ms="5227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner.ORIONErrorsValidations_Run -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
